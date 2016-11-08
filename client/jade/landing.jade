@@ -1,0 +1,57 @@
+div.home-container(ng-controller='home-controller')
+    header
+        img(src='./../assets/images/logo.svg')
+        h1 Brandon's Blog
+        button LOGIN
+    nav
+        ul
+            li
+                a(href='#') Home
+            li 
+                a(href='#/articles') Articles
+            li 
+                a(href='#/extra') Extras
+            li 
+                a(href='#/about') About
+            li 
+                a(href='#/contact') Contact
+            
+    div.artboard-container(ng-repeat='artboard in artboards')
+        h2 {{artboard.title}} - {{artboard.createdAt}}
+        div.content
+            img(src='{{artboard.imgUrl}}')
+            {{artboard.description}}
+            
+        div.comment-container
+            div.comment
+                div.links
+                    ul
+                        li(ng-repeat = 'tag in artboard.tags') {{tag}}
+                    div.social
+                        img(src='./../assets/Images/Facebook.png')
+                        img(src='./../assets/Images/Google.png')
+                        img(src='./../assets/Images/Linkedin.png')
+                        img(src='./../assets/Images/Pintrest.png')
+                        img(src='./../assets/Images/Twitter.png')
+                h3 Comments
+                div.comments(ng-repeat='comment in artboard.comments')
+                    h4 {{comment.username}} - {{comment.createdAt}}
+                    p {{comment.comment}}
+                    div.actions
+                        a.reply Reply
+                        a.like Like
+                        a.dislike Dislike
+                        a.show Show Replies
+                        div.replies(ng-repeat='reply in comment.replies')
+                            h4 {{reply.username}} - {{reply.createdAt}}
+                            p {{reply.reply}}
+                        
+            hr
+        footer
+            ul
+                li Home
+                li Articles
+                li Extras
+                li About
+                li Contact
+            p Copyright (c) 2016 Copyright Holder All Rights Reserved.

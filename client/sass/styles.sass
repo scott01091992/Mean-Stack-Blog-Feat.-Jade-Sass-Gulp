@@ -1,0 +1,64 @@
+
+@import "bourbon/bourbon"
+
+//century gothic font import
+@include font-face("Century Gothic", "./../assets/GOTHIC", normal, 400, $file-formats: ttf)
+@include font-face("Century Gothic Bold", "./../assets/GOTHICB", normal, 700, $file-formats: ttf)
+@include font-face("Century Gothic Bold Italic", "./../assets/GOTHICBI", italic, 700, $file-formats: ttf)
+@include font-face("Century Gothic Italic", "./../assets/GOTHICI", italic, 400, $file-formats: ttf)
+@include font-face("Helvetica", "./../assets/kelvetica-webfont", normal, 400, $file-formats: woff)
+
+//brand colors
+$dark-orange: #FF8C00
+$grey-blue: #4C5660
+$grey: #808080
+$black: #000000
+$beige: #E5D0B0
+$bright-green: #89CA00
+$red-apple: #E12727
+
+//styleguide elements
+button
+  font-size: 14px
+  font-family: impact
+  padding: 0.5em 1.2em
+  border-radius: .1em
+  border: none
+  box-shadow: 0 .3em .5em .1em $grey-blue
+  background-color: $beige
+  transition: all .3s
+
+button:hover
+  box-shadow: 0 .05em .02em .01em black
+  transform: translate(0,.25em)
+
+body
+  font-family: 'Century Gothic'
+
+h1
+  font-family: 'Impact'
+
+h2
+  font-family: 'Century Gothic'
+  font-weight: 700
+
+.important
+  font-family: 'Helvetica'
+
+.error
+ color: $bright-green
+
+.success
+ color: $red-apple
+
+p
+  padding: 1em
+
+a
+    color: black
+    text-decoration: none
+
+//import modular scss pages
+
+@import 'containers'
+@import 'home'

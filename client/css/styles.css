@@ -1,0 +1,180 @@
+@font-face {
+  font-family: "Century Gothic";
+  font-style: 400;
+  font-weight: normal;
+  src: url("./../assets/GOTHIC.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Century Gothic Bold";
+  font-style: 700;
+  font-weight: normal;
+  src: url("./../assets/GOTHICB.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Century Gothic Bold Italic";
+  font-style: 700;
+  font-weight: italic;
+  src: url("./../assets/GOTHICBI.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Century Gothic Italic";
+  font-style: 400;
+  font-weight: italic;
+  src: url("./../assets/GOTHICI.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: 400;
+  font-weight: normal;
+  src: url("./../assets/kelvetica-webfont.woff") format("woff"); }
+
+button {
+  font-size: 14px;
+  font-family: impact;
+  padding: 0.5em 1.2em;
+  border-radius: .1em;
+  border: none;
+  box-shadow: 0 0.3em 0.5em 0.1em #4C5660;
+  background-color: #E5D0B0;
+  transition: all .3s; }
+
+button:hover {
+  box-shadow: 0 .05em .02em .01em black;
+  transform: translate(0, 0.25em); }
+
+body {
+  font-family: 'Century Gothic'; }
+
+h1 {
+  font-family: 'Impact'; }
+
+h2 {
+  font-family: 'Century Gothic';
+  font-weight: 700; }
+
+.important {
+  font-family: 'Helvetica'; }
+
+.error {
+  color: #89CA00; }
+
+.success {
+  color: #E12727; }
+
+p {
+  padding: 1em; }
+
+a {
+  color: black;
+  text-decoration: none; }
+
+::-webkit-scrollbar {
+  display: none; }
+
+.container {
+  max-width: 1400px; }
+
+.column2 {
+  width: 50%;
+  float: right; }
+
+.column3 {
+  width: 33.3%;
+  float: right; }
+
+.home-container {
+  max-width: 1400px;
+  margin: auto; }
+  .home-container header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 1em;
+    position: relative; }
+    .home-container header img {
+      width: 5em; }
+    .home-container header h1 {
+      font-size: 4em;
+      -webkit-margin-before: 0;
+      -webkit-margin-after: 0;
+      margin-left: .35em; }
+    .home-container header button {
+      top: 0;
+      right: 0;
+      position: absolute; }
+  .home-container nav {
+    display: flex;
+    justify-content: center; }
+    .home-container nav ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      -webkit-padding-start: 0;
+      -webkit-margin-after: 0; }
+      .home-container nav ul li {
+        list-style-type: none;
+        margin-right: 1em; }
+  .home-container .artboard-container {
+    padding: 1em; }
+    .home-container .artboard-container h2 {
+      display: block; }
+    .home-container .artboard-container .content {
+      line-height: 1.3em; }
+      .home-container .artboard-container .content img {
+        width: 74%;
+        margin: 0 1em 0 0;
+        background-color: #4C5660;
+        float: left; }
+      .home-container .artboard-container .content .description {
+        width: 25%;
+        padding: 0 1em;
+        font-size: 12px;
+        line-height: 1.5em;
+        overflow-y: scroll; }
+    .home-container .artboard-container .comment-container {
+      font-size: 14px; }
+      .home-container .artboard-container .comment-container .comment .links ul {
+        display: inline-block;
+        -webkit-padding-start: 0; }
+        .home-container .artboard-container .comment-container .comment .links ul li {
+          display: inline-block;
+          margin-right: 1em; }
+      .home-container .artboard-container .comment-container .comment .links .social {
+        display: inline-block;
+        float: right; }
+        .home-container .artboard-container .comment-container .comment .links .social img {
+          padding: 1em .5em;
+          height: 2em;
+          width: 2em; }
+      .home-container .artboard-container .comment-container .comment h3 {
+        text-decoration: underline;
+        -webkit-margin-before: 0;
+        color: darkorange; }
+      .home-container .artboard-container .comment-container .comment .comments p {
+        font-size: 12px;
+        line-height: 1.5em;
+        padding: 0 1em; }
+      .home-container .artboard-container .comment-container .comment .comments .actions .reply {
+        margin-right: 1em; }
+      .home-container .artboard-container .comment-container .comment .comments .actions .like {
+        margin-right: 1em; }
+      .home-container .artboard-container .comment-container .comment .comments .actions .show {
+        float: right; }
+      .home-container .artboard-container .comment-container .comment .comments .actions .replies {
+        margin-left: 5em; }
+        .home-container .artboard-container .comment-container .comment .comments .actions .replies p {
+          font-size: 12px;
+          line-height: 1.5em;
+          padding: 0 1em; }
+  .home-container footer ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    -webkit-padding-start: 0; }
+    .home-container footer ul li {
+      list-style-type: none;
+      padding: 0 1em 0 0;
+      font-size: 12px; }
+  .home-container footer p {
+    font-size: 10px;
+    text-align: center; }
