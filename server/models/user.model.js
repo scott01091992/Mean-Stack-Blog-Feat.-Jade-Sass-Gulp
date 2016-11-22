@@ -1,5 +1,4 @@
 var UserSchema = new mongoose.Schema({
-
 	name: {
 		type: String,
 		required: [true, 'Please provide your name']
@@ -14,16 +13,16 @@ var UserSchema = new mongoose.Schema({
 			message: 'Not a valid email address'
 		}
 	},
-  password: {
-    type: String,
-    required: [true, 'Please provide a password']
-  },
-  comments: {
-    type: [{type: mongoose.Schema.Types.ObjectId, ref: 'Comment'}]
-  },
-  likes: {
-    type: [{type: mongoose.Schema.Types.ObjectId, ref: 'Like'}]
-  }
+  	password: {
+    	type: String,
+    	required: [true, 'Please provide a password']
+  	},
+	likes: {
+		type: [String]
+	},
+	dislike: {
+		type: [String]
+	}
 }, {timestamps: true});
 
 mongoose.model('User', UserSchema);

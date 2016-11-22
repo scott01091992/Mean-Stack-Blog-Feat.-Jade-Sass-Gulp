@@ -6,12 +6,17 @@
     "npm": "2.15.5"
   },
   "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
     "body-parser": "^1.15.1",
+    "client-sessions": "^0.7.0",
+    "cookie-parser": "^1.4.3",
     "express": "~4.10.0",
+    "express-session": "^1.14.2",
     "gulp": "^3.9.1",
     "gulp-jade": "^1.1.0",
     "gulp-sass": "^2.3.2",
-    "mongoose": "^4.4.20"
+    "mongoose": "^4.4.20",
+    "nodemailer": "^2.6.4"
   },
   "scripts": {
     "start": "node server.js"

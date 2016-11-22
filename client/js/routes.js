@@ -9,17 +9,14 @@ myApp.config(function ($routeProvider){
     .when('/articles',{
       templateUrl: '../partials/articles.html'
     })
-    .when('/article/:id',{
-      templateUrl: '../partials/article.html'
-    })
     .when('/about',{
-      templateUrl: '../partials/contact.html'
-    })
-    .when('/contact',{
       templateUrl: '../partials/about.html'
     })
-    .when('/extras',{
-      templateUrl: '../partials/reviews.html'
+    .when('/contact',{
+      templateUrl: '../partials/contact.html'
+    })
+    .when('/videos',{
+      templateUrl: '../partials/video.html'
     })
     .otherwise({
       redirectTo: '/'
